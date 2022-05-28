@@ -1,5 +1,6 @@
-import Head from 'next/head';
-import Banner from '../components/Banner';
+import Head from "next/head";
+import Banner from "../components/Banner";
+import Header from "../components/Header";
 
 export default function Home() {
   return (
@@ -10,9 +11,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="container flex-auto h-screen w-screen bg-slate-100 m-auto bg-gradient-to-tr overflow-hidden ">
-        <Banner />
-      </div>
+      <Header />
     </div>
   );
 }
