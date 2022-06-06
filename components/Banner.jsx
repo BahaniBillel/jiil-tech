@@ -1,16 +1,13 @@
 import React from 'react';
 import Image from 'next/image';
-import homeBanner from '../images/homeBanner.jpg';
+import homeBanner from '../images/technology-01.jpg';
+import Header from './Header';
 
 function Banner() {
   return (
-    <div className=" w-full">
-      <Image
-        src={homeBanner}
-        alt="/"
-        className="object-cover h-full w-full"
-        priority
-      />
+    <div className=" w-screen bg-red-500 ">
+      <Header />
+      <Image src={homeBanner} alt="/" priority />
     </div>
   );
 }

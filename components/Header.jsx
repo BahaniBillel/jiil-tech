@@ -1,13 +1,13 @@
-import React from "react";
-import Image from "next/image";
-import Logo from "../images/jiil-tech.jpg";
+import React from 'react';
+import Image from 'next/image';
+import Logo from '../images/logo-transp.png';
 
 function Header() {
   return (
-    <header className="  h-fit grid grid-cols-3 w-full items-center space-x-5">
+    <header className=" fixed z-50 h-fit grid grid-cols-3 w-full items-center space-x-5 px-60">
       {/* left  */}
       <div className="w-5/5 h-full  p-8  ">
-        <ul className="flex space-x-9 h-full items-center font-semibold">
+        <ul className="flex space-x-20 h-full items-center font-bold text-xl text-white tracking-wider">
           <li>
             <a href="#">Work</a>
           </li>
@@ -25,18 +25,22 @@ function Header() {
       {/* middle */}
       <div className="relative  h-full w-5/5  cursor-pointer place-items-center">
         <div className="flex justify-center">
-
-        <Image src={Logo} objecFit="contain" width="150%" height="100%" />
+          <Image src={Logo} objecFit="contain" width="120%" height="120%" />
         </div>
       </div>
 
       {/* right */}
-      <div className="w-5/5 h-full  items-center space-x-5 flex  ">
-        <div className="flex w-full justify-around">
-
-          <p className="text-orange-600 font-semibold text-xl items-center flex">00213 696 427 930 </p>
-          <p className="border border-solid border-orange-600 
-          font-semibold uppercase px-6 py-2 text-orange-600 text-xl">Let's talk</p>
+      <div className="w-5/5 h-full  items-center m-0 flex   ">
+        <div className="flex w-full justify-around items-center">
+          <p className="text-white font-semibold text-xl items-center tracking-wide">
+            00213-696-427-930{' '}
+          </p>
+          <p
+            className="border border-solid border-white 
+          font-semibold uppercase px-6 py-2  text-xl text-white"
+          >
+            Let's talk
+          </p>
         </div>
       </div>
     </header>
