@@ -5,9 +5,15 @@ import Header from './Header';
 
 function Banner() {
   return (
-    <div className=" w-screen bg-red-500 ">
+    <div className=" relative w-screen bg-red-500 h-[50vh] sm:h-[60vh] xl:h-[80vh] ">
       <Header />
-      <Image src={homeBanner} alt="/" priority />
+      <Image
+        src={homeBanner}
+        alt="/"
+        priority
+        layout="fill"
+        objectFit="cover"
+      />
     </div>
   );
 }
