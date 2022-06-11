@@ -1,19 +1,14 @@
-import React from 'react';
-import Image from 'next/image';
-import homeBanner from '../images/technology-01.jpg';
-import Header from './Header';
+import React from "react";
+import Image from "next/image";
+import homeBanner from "../images/webDev.jpg";
+import Header from "./Header";
+import UpperHeader from "./UpperHeader";
 
 function Banner() {
   return (
-    <div className=" relative w-screen bg-red-500 h-[50vh] sm:h-[60vh] xl:h-[80vh] ">
-      <Header />
-      <Image
-        src={homeBanner}
-        alt="/"
-        priority
-        layout="fill"
-        objectFit="cover"
-      />
+    <div className=" relative w-screen h-[100vh] bg-slate-200 lg:h-[100vh] md:h-[80vh]">
+      <UpperHeader />
+      <Header/>
     </div>
   );
 }
