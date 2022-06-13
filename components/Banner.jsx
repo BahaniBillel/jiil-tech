@@ -6,7 +6,7 @@ import UpperHeader from "./UpperHeader";
 
 function Banner() {
   return (
-    <div className=" relative w-screen  bg-slate-200 ">
+    <div className=" relative w-screen  bg-slate-100 ">
       <UpperHeader />
       <Header/>
     </div>

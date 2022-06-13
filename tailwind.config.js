@@ -6,7 +6,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'regal-blue': '#243c5a',
+        'violeta-200': '#b56078',
+        'violeta-300': '#b55671',
+        'violeta-400': '#b53e6a',
+        'violeta-600': '#a63961',
       },
     },
   },
