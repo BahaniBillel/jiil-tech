@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Banner from '../components/Banner';
 import Header from '../components/Header';
+import MySkills from '../components/MySkills';
 import WebDesign from '../components/WebDesign';
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <main className="relative  flex flex-col items-center">
         <Banner />
         <WebDesign />
+        <MySkills />
       </main>
     </div>
   );
